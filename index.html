@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <title>Arsonist´s Enterprise</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0A4D68;
+        }
+        nav {
+        background-color: #0A4D68; /* Replace with your desired color for the navigation bar */
+    }
+
+    .nav-link {
+        color: #FFF; /* Replace with your desired color for the navigation links */
+    }
+
+    .nav-link.active {
+        background-color: #3bf8e8ab; /* Replace with your desired color for the active link */
+    }
+
+    .dropdown-menu {
+        background-color: #35ad99c7; /* Replace with your desired color for the dropdown menu */
+    }
+
+    .dropdown-item {
+        color: #000000; /* Replace with your desired color for the dropdown menu links */
+    }
+
+        /* Estilos del slideshow */
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 30%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        /* Estilos para los botones de navegación */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        /* Estilos para los puntos indicadores */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 4px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active-dot {
+            background-color: #717171;
+        }
+
+        /* Estilos para los subtítulos */
+        .subtitle-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .subtitle {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="https://i.imgur.com/mGCqSzC.jpg" alt="Imagen 1">
+        </div>
+        <div class="slide">
+            <img src="https://i.imgur.com/0NAVwOF.jpg" alt="Imagen 2">
+        </div>
+        <div class="slide">
+            <img src="https://i.imgur.com/KV9v1Ab.jpg" alt="Imagen 3">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="subtitle-container">
+        <h3 class="subtitle">Sketches <br> $15: burst <br> $25: waist up <br> $35: full body </h3>
+    </div>
+
+    <!-- Segunda galería -->
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="https://i.imgur.com/fbyckBQ.jpg" alt="Imagen 1">
+        </div>
+        <div class="slide">
+            <img src="https://i.imgur.com/IbdDjU5.jpg" alt="Imagen 2">
+        </div>
+        <div class="slide">
+            <img src="https://i.imgur.com/BVYwHoG.jpg" alt="Imagen 3">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <div class="subtitle-container">
+        <h3 class="subtitle">Simple cell.s <br> $30: burst <br> $50: waist up <br> $60: full body</h3>
+    </div>
+
+    <!-- Tercera galería -->
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="https://i.imgur.com/qRFYtRX.jpg" alt="Imagen 1">
+        </div>
+        <div class="slide">
+            <img src="https://i.imgur.com/u48LebM.jpg" alt="Imagen 2">
+        </div>
+        <div class="slide">
+            <img src="https://i.imgur.com/8Ktcy37.jpg" alt="Imagen 3">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+    <div class="subtitle-container">
+        <h3 class="subtitle">Full color <br> $40: burst <br> $60: waist up <br> $80: full body </h3>
+    </div>
+
+    <script>
+        let slideIndexes = [1, 1, 1]; // Un índice para cada galería
+        showSlides(1, 0); // Mostrar la primera imagen de la primera galería al cargar la página
+    
+        function plusSlides(n, galleryIndex) {
+            showSlides(slideIndexes[galleryIndex] += n, galleryIndex);
+        }
+    
+        function currentSlide(n, galleryIndex) {
+            showSlides(slideIndexes[galleryIndex] = n, galleryIndex);
+        }
+    
+        function showSlides(n, galleryIndex) {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            const dots = document.getElementsByClassName("dot");
+    
+            if (n > slides.length) {
+                slideIndexes[galleryIndex] = 1;
+            }
+    
+            if (n < 1) {
+                slideIndexes[galleryIndex] = slides.length;
+            }
+    
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active-dot", "");
+            }
+    
+            slides[slideIndexes[galleryIndex] - 1].style.display = "block";
+            dots[slideIndexes[galleryIndex] - 1].className += " active-dot";
+    }
+    </script>
+    <nav class="fixed-top"> <!-- Add the "fixed-top" class here -->
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Prices</a>
+            </li>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://twitter.com/ArsonIst_lol?t=yceo-7P4IdcXrlZjlGADVg&s=08">Twitter</a></li>
+                    <li><a class="dropdown-item" href="https://instagram.com/arsonist_lol?igshid=ZDdkNTZiNTM=">Instagram</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
